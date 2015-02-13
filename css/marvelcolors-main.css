@@ -1,0 +1,255 @@
+/*TYPO*/
+@font-face {
+    font-family: 'Nevis Webfont';
+    src: url('../nevis/nevis.eot');
+    src: url('../nevis/nevis.eot?#iefix') format('embedded-opentype'),
+         url('../nevis/nevis.woff') format('woff'),
+         url('../nevis/nevis.ttf') format('truetype'),
+         url('../nevis/nevis.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	font-family: "Nevis", "Arial", sans-serif;
+}
+
+/*STYLE HOME*/
+.floor-1 h1{
+	text-align: center;
+	position: relative;
+}
+
+#devant{
+	line-height: 1.1em;
+	color:#b3b2b2;
+	z-index:2;
+	margin-top:-2.9em;
+}
+
+#derriere{
+	line-height: 1.1em;
+	color:#fff;
+	z-index:1;
+	text-shadow: #b3b2b2 2px 2px, #b3b2b2 -2px 2px, #b3b2b2 -2px -2px, #b3b2b2 2px -2px;
+	opacity: 0.7;
+}
+
+#formeleft{
+	width:300px;
+	height:100%;
+	cursor: pointer;
+	display: block;
+	position: absolute;
+	left: 0;
+	z-index: 6;
+	opacity:0.8;
+}
+
+#formeleft:hover{
+	width: 0; height: 0; border-bottom: 100vh solid #1d70b7; border-right: 400px solid transparent;
+}
+
+#formeright{
+	width:300px;
+	height:100%;
+	cursor: pointer;
+	display: block;
+	position: absolute;
+	right:0;
+	z-index: 6;
+	opacity:0.8;
+}
+
+#formeright:hover{
+	width: 0; height: 0; border-top: 100vh solid #39a935; border-left: 400px solid transparent;
+}
+
+#formebottom{
+	width:100%;
+	height:300px;
+	cursor: pointer;
+	display: block;
+	position: absolute;
+	bottom:0;
+	z-index: 6;
+	opacity:0.8;
+
+}
+
+#formebottom:hover{
+	width: 0; height: 0; border-bottom: 400px solid #e95a0c; border-left: 100vw solid transparent;
+	max-width: 100%;
+}
+
+.title{
+	font-size:70px;
+	display: none;
+}
+
+.subtitle{
+	font-size:20px;
+	display: none;
+	color: #fff;
+	width: 250px;
+}
+
+#cbs{
+	color:#1d70b7;
+}
+
+#cbs-sub{
+	position: fixed;
+	left: 2%;
+	bottom:3%;
+}
+
+#cbsea{
+	color:#39a935;
+}
+
+#cbsea-sub{
+	position: fixed;
+	right: 2%;
+	top:3%;
+}
+
+#cbh{
+	color:#e95a0c;
+}
+
+#cbh-sub{
+	position: fixed;
+	left: 60%;
+	bottom:3%;
+}
+
+/*STYLE NAVIGATION FLECHES*/
+.floor-1 #top{
+	display:none;
+}
+
+#left{
+	background: url("../images/gauche_gris.png") no-repeat center center;
+	left:2%;
+}
+
+#left:hover{
+	background: url("../images/gauche_blanc.png") no-repeat center center;
+}
+
+
+#right{
+	background: url("../images/droite_gris.png") no-repeat center center;
+	left:98%;
+}
+
+#right:hover{
+	background: url("../images/droite_blanc.png") no-repeat center center;
+}
+
+#bas{
+	background: url("../images/bas_gris.png") no-repeat center center;
+	top:97%;
+}
+
+#bas:hover{
+	background: url("../images/bas_blanc.png") no-repeat center center;
+}
+
+.icone_dir{
+	z-index:5;
+	width: 50px;
+	height: 50px;
+	cursor:pointer;
+}
+
+.floor-2 #left, .floor-2 #top, .floor-2 #bas{
+	display:none;
+}
+
+.floor-4 #top, .floor-5 #top, .floor-6 #top, .floor-7 #top{
+	background: url("../images/haut_gris.png") no-repeat center center;
+	top:4%;
+}
+
+.floor-4 #top:hover, .floor-5 #top:hover, .floor-6 #top:hover, .floor-7 #top:hover{
+	background: url("../images/haut_blanc.png") no-repeat center center;
+}
+
+.floor-4 #top, .floor-5 #top, .floor-6 #top,{
+	background: url("../images/bas_gris.png") no-repeat center center;
+	top:97%;
+}
+
+#up{
+	top:97%;
+	cursor:pointer;
+	background: url("../images/rond-up-blanc.png") no-repeat center center;
+}
+
+/*STYLE COLORS BY SEASONS*/
+#output1 { width:25%; height:100%; position:absolute; top:0; left:0; }
+#output2 { width:25%; height:100%; position:absolute; top:0; left:25%; }
+#output3 { width:25%; height:100%; position:absolute; top:0; left:50%; }
+#output4 { width:25%; height:100%; position:absolute; top:0; left:75%; }
+.slice { width:100%; list-style:none; }
+
+/* Mobile first queries */
+
+/*mobile */
+@media (min-width: 0px) {
+	#devant{
+		font-size: 4em;
+	}
+
+	#derriere{
+		font-size: 4.1em;
+	}
+}
+/* Larger than mobile 
+@media (min-width: 400px) {
+	#devant{
+		font-size: 4em;
+	}
+
+	#derriere{
+		font-size: 4.4em;
+	}
+}*/
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+	#devant{
+		font-size: 6em;
+	}
+
+	#derriere{
+		font-size: 6.1em;
+	}
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+	#devant{
+		font-size: 8em;
+	}
+
+	#derriere{
+		font-size: 8.2em;
+	}
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+	#devant{
+		font-size: 14em;
+	}
+
+	#derriere{
+		font-size: 14.4em;
+	}	
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
