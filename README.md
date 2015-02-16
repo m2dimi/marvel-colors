@@ -2,9 +2,11 @@ Marvel Colors
 =============
 
 Le groupe :
+
 Claire Mauchin - Ingrid Lenoir - Claire Blumenfeld
 
 Le concept :
+
 Marvel Colors est un projet de data visualisation permettant de visualiser de façon ludique l’utilisation des couleurs sur les couvertures de comics Marvel.
 
 Notre concept se basant sur les couleurs nous avons choisi de représenter nos données de façon essentiellement visuelle. Le texte n’occupe qu’une place réduite et vient s’ajouter en tant que complément d’information. 
@@ -17,9 +19,11 @@ L’exploration est libre, il n’y a pas d’ordre entre les 3 thématiques.
 La section Infos renseigne le visiteur sur comment naviguer au sein du site, tandis que la section About détaille le concept du projet et les données utilisées.
 
 Les données utilisées :
+
 Le nombre de comics édités par Marvel est immense. Pour cette data visualisation, nous avons sélectionné 12 séries : Black Panther, Captain America, Captain Marvel, Civil Wars, Iron Man, Thor, Ant-Man, Avengers, Hulk, Doctor Strange, Guardians of the Galaxy, Inhumans. Nous avons ensuite sélectionné au sein de ces séries les tomes parus durant les 15 dernières années (des années 2000 environ jusqu’à aujourd’hui). Notre travail recense donc un total de 609 couvertures. 
 
 Détails des 3 thématiques :
+
 Colors by series : Cette thématique représente sous forme de bandes de couleurs verticales le pourcentage de couleur définissant les douze séries choisies. Lors du survol sur une série, la bande de couleur pivote et fait apparaitre un nuancier de neuf couleurs représentant les couleurs de la série en question.
 Colors by hues : Cette thématique présente six couleurs dominantes, les plus utilisées au sein des couvertures. Chaque slide présente une couleur ainsi que les couvertures utilisant cette couleur. En cliquant sur une couverture, on accède aux informations de ectte couverture (titre de la série, numéro de tome, nom de l’artiste du dessin de la couverture, date de parution, ainsi qu’un nuancier de 5 couleurs).
 Colors by seasons : Cette thématique représente sous forme de bandes de couleurs horizontales, les couleurs utilisées par saisons. Chaque ligne représente une couverture d’une série. La couleur choisie est la somme des données de teinte, saturation et luminosité. L’ensemble des 609 couvertures ont été répartie dans les 4 saisons en fonction de leur date de parution.
