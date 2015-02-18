@@ -198,12 +198,6 @@ body{
 }
 		
 
-
-.flip-container, .front, .back {
-	width:calc(100vw / 12);
-	height: 100vh;
-}
-
 .flipper {
 	-webkit-transition: 0.6s;
 	-webkit-transform-style: preserve-3d;
@@ -254,7 +248,6 @@ body{
 }
 
 .front h1{
-	font-size:20px;
 	color: #fff;
 	position: relative;
 	z-index: 2;
@@ -273,7 +266,6 @@ body{
 	color: rgba(255, 255, 255, 0.6);
     display: block;
     text-align: center;
-	line-height: 11vh;
 }
 
 /* Mobile first queries */
@@ -288,7 +280,7 @@ body{
 		font-size: 4.1em;
 	}
 
-	 #formeleft{
+	#formeleft{
 	width:120px;
 	height:100%;
 	cursor: pointer;
@@ -363,6 +355,20 @@ body{
 		position: fixed;
 		left: 62%;
 		bottom:1%;
+	}
+
+	/*Largeur & hauteur de la card*/
+	.flip-container, .front, .back {
+	width:calc(100vw / 6);
+	height: 50vh;
+}
+	/*taille typo card*/
+	.front h1{
+	font-size:10px;
+}
+	.nuancier span{
+		line-height: 5vh;
+		font-size: 12px;
 	}
 }
 /* Larger than mobile */
@@ -460,6 +466,20 @@ body{
 		left: 62%;
 		bottom:1%;
 	}
+
+	/*Largeur & hauteur de la card*/
+	.flip-container, .front, .back {
+	width:calc(100vw / 12);
+	height: 100vh;
+	}
+	/*taille typo card*/
+	.front h1{
+	font-size:9px;
+	}
+	.nuancier span{
+		line-height: 11vh;
+		font-size: 9px;
+	}
 }
 
 /* Larger than tablet */
@@ -549,6 +569,11 @@ body{
 		left: 62%;
 		bottom:1%;
 	}
+	.nuancier span{
+		line-height: 11vh;
+		font-size: 14px;
+	}
+
 }
 
 /* Larger than desktop */
@@ -637,6 +662,15 @@ body{
 		left: 60%;
 		bottom:2%;
 	}
+
+	.front h1{
+	font-size:13px;
+	}
+	.nuancier span{
+		line-height: 11vh;
+		font-size: 16px;
+	}
+
 }
 
 /* Larger than Desktop HD */
@@ -708,10 +742,16 @@ body{
 		width: 250px;
 	}
 
-
+	.front h1{
+	font-size:16px;
+	}
 
 }
-
+@media (min-width: 1600px) {
+	.front h1{
+	font-size:20px;
+	}
+}
 
 /*TEST MODAL*/
 #mother_modal{
