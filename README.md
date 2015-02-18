@@ -29,7 +29,7 @@ Détails des 3 thématiques :
 
 Colors by series : Cette thématique représente sous forme de bandes de couleurs verticales le pourcentage de couleur définissant les douze séries choisies. Lors du survol sur une série, la bande de couleur pivote et fait apparaitre un nuancier de neuf couleurs représentant les couleurs de la série en question.
 
-Colors by hues : Cette thématique présente six couleurs dominantes, les plus utilisées au sein des couvertures. Chaque slide présente une couleur ainsi que les couvertures utilisant cette couleur. En cliquant sur une couverture, on accède aux informations de ectte couverture (titre de la série, numéro de tome, nom de l’artiste du dessin de la couverture, date de parution, ainsi qu’un nuancier de 5 couleurs).
+Colors by hues : Cette thématique présente sept couleurs dominantes, les plus utilisées au sein des couvertures. Chaque slide présente une couleur [ainsi que les couvertures utilisant cette couleur. En cliquant sur une couverture, on accède aux informations de cette couverture (titre de la série, numéro de tome, nom de l’artiste du dessin de la couverture, date de parution, ainsi qu’un nuancier de 5 couleurs).]
 
 Colors by seasons : Cette thématique représente sous forme de bandes de couleurs horizontales, les couleurs utilisées par saisons. Chaque ligne représente une couverture d’une série. La couleur choisie est la somme des données de teinte, saturation et luminosité. L’ensemble des 609 couvertures ont été répartie dans les 4 saisons en fonction de leur date de parution.
 
@@ -46,8 +46,10 @@ http://www.comicvine.com/
 Les technologies utilisées :
 
 Les données portant sur les couvertures ont été récoltées en utilisant l’outil Kimono Labs ainsi que de façon manuelle. Les données des codes couleurs ont été récupérées en utilisant Adode Kuler (https://color.adobe.com/fr/create/color-wheel/) et Color Thief (http://lokeshdhakar.com/projects/color-thief/).
+
 Le design du project à été maquetté sous Adobe Illustrator.
-Pour le développement du site nous avons utilisé : (à finaliser par Claire M.)
+
+Pour le développement de l'interface, nous avons utilisé le plugin ascensor, que nous avons personnalisé en fonction de nos besoins,  pour gérer la navigation générale du site. Nous avons ensuite travaillé nos données partie par partie : ainsi, nous avons des json indépendants pour chacune d'entre elles. Nous avons bien entendu tâché au maximum de dynamiser l'affichage de nos données, afin de n'avoir à mettre à jour que le fichier json s'il y a des données à rajouter ou à modifier ultérieurement.  
 
 
 Les inspirations :
@@ -61,5 +63,5 @@ Les obstacles rencontrés :
 
 Les principaux obstacles rencontrés ont porté sur la récolte des données et sur le développement du site. La récolte des données s’est fait de façon assez fastidieuse à cause du fait que les outils automatiques (comme Kimono Labs) n’étaient pas complètement adaptés à nos besoins. Plus de la moitié des données ont été récolté de façon manuelle.
 Nous avons également réfléchi assez longtemps sur comment représenter de façon visuelle les données en utilisant le thème de la couleur. Ce fut plus un challenge qu’un réel obstacle.
-Nous avons également eut pas mal de difficultés lors du développement du site. (à finaliser par Claire M.)
-
+Nous avons également eu pas mal de difficultés lors du développement du site. Par exemple, pour la partie "colors by seasons", nous voulions afficher les données textuelles de manière dynamique, cependant nous n'avons pas réussi à faire cela. De plus, dans la partie "colors by hues", nous voulions afficher les couvertures correspondant aux différentes couleurs les plus utilisées, mais après moults essais, nous avons finalement abandonné. Nous avons aussi tenté de rendre notre site le plus responsive possible, ce qui est majoritairement une réussite, même si quelques bugs persistent encore à ce jour.
+Nous avons bien entendu rencontré d'autres obstacles que nous avons finalement réussi à surmonter, comme l'affichage dynamique de l'ensemble de nos données pour chacune de nos thématiques.
