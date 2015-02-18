@@ -31,7 +31,7 @@ body{
 	text-transform: uppercase;
 }
 
-.floor-4 h3, .floor-5 h3, .floor-6 h3, .floor-7 h3, .floor-8 h3, .floor-9 h3, .floor-10 h3{
+.floor-4 h3, .floor-5 h3, .floor-6 h3, .floor-7 h3, .floor-8 h3, .floor-9 h3, .floor-10 h3, .floor-4 h4, .floor-5 h4, .floor-6 h4, .floor-7 h4, .floor-8 h4, .floor-9 h4, .floor-10 h4{
 	color:rgba(255, 255, 255, 0.6);
 }
 
@@ -881,4 +881,8 @@ a:hover {
 .info_season{
 	width:25%;
 	float: left;
+}
+
+.info_season h3{
+	font-size: 16px;
 }
