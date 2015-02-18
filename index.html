@@ -2,14 +2,18 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Test ascensor</title>
+		<title>Marvel Colors</title>
+		<!-- meta -->
+		<meta name="description" content="Marvel Colors: visualize 15 years of Marvel covers through their colors">
+		<meta name="author" content="Claire Blumenfeld, Ingrid Lenoir, Claire Mauchin">
 		<meta name="viewport" content="user-scalable=0,width=device-width,initial-scale=1,maximum-scale=1">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/marvelcolors-main.css" />
+		<link rel="stylesheet" type="text/css" href="css/magnific-popup.css" />
 		<style>
 		.floor .text {color: white;font-weight: 500;text-align: center;position: absolute;top: 50%;left: 50%;-moz-transform: translateX(-50%) translateY(-50%);-webkit-transform: translateX(-50%) translateY(-50%);transform: translateX(-50%) translateY(-50%);}
 		.floor-1{background: #fff;}.floor-2{background: #fff;}.floor-3{background: #fff;}
-		.floor-4{background: #EB5D45;}
+		/*.floor-4{background: #EB5D45;}*/
 		.floor-5{background: #4AAEB6;}
 		.floor-6{background: #E7DFBF;}
 		.floor-7{background: #CA9E67;}
@@ -44,56 +48,54 @@
 			        <h2>Visualize 15 years of Marvel covers through their colors</h2>
 				</span>
 			    <span id="mother_modal">
-			    	<h2><button class="md-trigger help" data-modal="modal-11">Help</button><button class="md-trigger about" data-modal="modal-12">About</button></h2>
+			    	<h2><a class="popup-modal help" href="#test-modal1">Help</a><a class="popup-modal about" href="#test-modal2">About</a></h2>
 			    </span>
 			    <div class="cover"></div>
 				<h1 id="cbs" class="text title">COLORS<br />BY SERIES</h1>
 				<h1 id="cbsea" class="text title">COLORS<br />BY SEASONS</h1>
 				<h1 id="cbh" class="text title">COLORS<br />BY HUES</h1>
-									<!-- TEST MODAL-->
-					<div class="md-modal md-effect-12" id="modal-11">
-	            		<div class="md-content">
-				            <button class="md-close">Close</button>
-				            <button class="titre-page">Help</button>
-				            <div class="container" id="modal-11-content">
-				                <div class="two-thirds column">  
-				                	<h2>HELP</h2>
-				                   	 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. </p>
-	               			    </div>
-	            			</div>  
-	          			</div>
-        			</div>
-			        <div class="md-modal md-effect-12" id="modal-12">
-			          <div class="md-content">
-			            <button class="md-close">Close</button>
-			            <button class="titre-page">About</button>
-			            <div class="container" id="modal-12-content">
-			              <div class="seven columns">  
-			                <h2>THE PROJECT</h2>
-			                    <p>Marvel Colors is a data-visualization project divided into three sections in which the visitor playfully explores data about colors of Marvel comics covers.</p>
-			                    <p>This project was carried out by three Marvel comics fans for the Information Design course in the final year of their master’s degree in Interface Design at Paris XIII university.</p>
-			                    <h2>DATA</h2>
-			                    <p>Marvel Colors focuses on a selection of Marvel comics.</p>
-			                    <p>Release dates : 2000 to 2015<br />Series : Black Panther, Captain America, Captain Marvel, Civil Wars, Iron Man, Thor, Ant-Man, Avengers, Hulk, Doctor Strange, Guardians of the Galaxy, Inhumans</p>
-			                    <h2>DATA SOURCE</h2>
-			                    <p><a href="http://marvel.com/comics/series">http://marvel.com/comics/series</a><br /><a href="http://marvel.wikia.com/Contents">http://marvel.wikia.com/Contents</a><br /><a href="http://www.comicvine.com">http://www.comicvine.com</a></p>
-			              </div>
-			              <div class="five columns">  
-			                    <h2>THE TEAM</h2>
-			                    <p>Claire Blumenfeld | Web design<br />Ingrid Lenoir | Data Processing<br />Claire Mauchin | Development</p>
-			                    <!--<h2>HOW DOES IT WORK ?</h2>
-			                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. </p>-->
-			                    <h2>MANY THANKS TO</h2>
-			                    <p>Mr Daniele Guido, Mr Everardo Reyes and our friends Yannick Houssin &amp; Lucas Turuani for their help and their patience.</p>
-			                    <p>We couldn't have finished this without you.</p>
-			                    <h2>SHARE THE MARVEL LOVE</h2>
-			                    <a href="#" class="share facebook">Facebook</a>
-			                    <a href="#" class="share twitter">Twitter</a>
-			              </div>
-			            </div>  
-			          </div>
-			        </div>
-			        <div class="md-overlay"></div><!-- the overlay element -->
+				<!-- TEST MODAL-->
+				<div id="test-modal1" class="white-popup-block mfp-hide">
+					
+						<div class="header">
+							<h2>Help</h2>
+						</div>
+						<div class="copy">
+							<p>Click on the arrows or use your keyboard arrow keys to navigate the website.</p>
+							<img src="images/gauche_blanc.png"/>
+							<img src="images/droite_blanc.png"/>
+							<span id="or">or</span>
+							<img src="images/clavier_3.png"/>
+						</div>
+						<p><a class="popup-modal-dismiss" href="#">Dismiss</a></p>
+					
+				</div>
+				<div id="test-modal2" class="white-popup-block mfp-hide">
+					
+						<div class="header">
+							<h2>About</h2>
+						</div>
+							<div class="copy">
+							<h2>THE PROJECT</h2>
+				            <p>Marvel Colors is a data-visualization project divided into three sections in which the visitor playfully explores data about colors of Marvel comics covers.</p>
+				            <p>This project was carried out by three Marvel comics fans for the Information Design course in the final year of their master’s degree in Interface Design at Paris XIII university.</p>
+				            <h2>DATA</h2>
+				            <p>Marvel Colors focuses on a selection of Marvel comics.</p>
+				            <p>Release dates : 2000 to 2015<br />Series : Black Panther, Captain America, Captain Marvel, Civil Wars, Iron Man, Thor, Ant-Man, Avengers, Hulk, Doctor Strange, Guardians of the Galaxy, Inhumans</p>
+				            <h2>DATA SOURCE</h2>
+				            <p><a href="http://marvel.com/comics/series">http://marvel.com/comics/series</a><br /><a href="http://marvel.wikia.com/Contents">http://marvel.wikia.com/Contents</a><br /><a href="http://www.comicvine.com">http://www.comicvine.com</a></p>
+				            <h2>THE TEAM</h2>
+				            <p>Claire Blumenfeld | Web design<br />Ingrid Lenoir | Data Processing<br />Claire Mauchin | Development</p>
+				            <h2>MANY THANKS TO</h2>
+				            <p>Mr Daniele Guido, Mr Everardo Reyes, Mr Guy Bilisko and our friends Yannick Houssin &amp; Lucas Turuani for their help and their patience.</p>
+				            <p>We couldn't have finished this without you.</p>
+				            <h2>SHARE THE MARVEL LOVE</h2>
+				            <a href="https://www.facebook.com/sharer/sharer.php?u=http://m2dimi.github.io/marvel-colors" target="_blank" class="share facebook">Facebook</a>
+				            <a href="http://twitter.com/intent/tweet/?url=http://m2dimi.github.io/marvel-colors&text=Marvel%20Colors:%20visualize%2015%20years%20of%20Marvel%20covers%20through%20their%20colors" target="_blank" class="share twitter">Twitter</a>
+						</div>
+						<p><a class="popup-modal-dismiss" href="#">Dismiss</a></p>
+					
+				</div>
 			</div>
 			<!--COLORS BY SERIES-->
 			<div class="floor floor-2">
@@ -108,21 +110,27 @@
 					<li id="left" class="icone_dir text"><a></a></li>
 				</ul>
 				<div id="output1">
-					<span classe="infoseasons"></span>
 				</div>
 				<div id="output2">
-					<span classe="infoseasons"></span>
 				</div>
-				<div id="output3">
-					<span classe="infoseasons"></span>					
+				<div id="output3">				
 				</div>
-				<div id="output4">
-					<span classe="infoseasons"></span>					
+				<div id="output4">				
+				</div>
+				<div id="infos_seasons">
+					<div class="info_season"><h2>SPRING</h2><h3>1 line = 1 cover <br /> total = 112 comics</h3></div>
+					<div class="info_season"><h2>SUMMER</h2><h3>1 line = 1 cover <br /> total = 160 comics</h3></div>
+					<div class="info_season"><h2>AUTUMN</h2><h3>1 line = 1 cover <br /> total = 149 comics</h3></div>
+					<div class="info_season"><h2>WINTER</h2><h3>1 line = 1 cover <br /> total = 188 comics</h3></div>
 				</div>
 			</div>
 			<!--MOST USED COLORS-->
 			<div class="floor floor-4">
-				<span class="text">Most used color 1</span>
+				<span class="text">
+					<h2></h2>
+					<h3></h3>
+				</span>
+				<div id="test"></div>
 				<ul class="links-to-floor">
 					<li id="top" class="icone_dir text"><a></a></li>
 				</ul>
@@ -131,21 +139,60 @@
 				</ul>
 			</div>
 			<div class="floor floor-5">
-				<span class="text">Most used color 2</span>
+				<span class="text">
+					<h2></h2>
+					<h3></h3>
+				</span>
 				<ul class="prev-next-links">
 					<li id="top" class="icone_dir text prev"><a></a></li>
 					<li id="bas" class="icone_dir text next" ><a></a></li>
 				</ul>
 			</div>
 			<div class="floor floor-6">
-				<span class="text">Most used color 3</span>
+				<span class="text">
+					<h2></h2>
+					<h3></h3>
+				</span>
 				<ul class="prev-next-links">
 					<li id="top" class="icone_dir text prev"><a></a></li>
 					<li id="bas" class="icone_dir text next" ><a></a></li>
 				</ul>
 			</div>
 			<div class="floor floor-7">
-				<span class="text">Most used color 4</span>
+				<span class="text">
+					<h2></h2>
+					<h3></h3>
+				</span>
+				<ul class="prev-next-links">
+					<li id="top" class="icone_dir text prev"><a></a></li>
+					<li id="bas" class="icone_dir text next" ><a></a></li>
+				</ul>
+			</div>
+			<div class="floor floor-8">
+				<span class="text">
+					<h2></h2>
+					<h3></h3>
+				</span>
+				<ul class="prev-next-links">
+					<li id="top" class="icone_dir text prev"><a></a></li>
+					<li id="bas" class="icone_dir text next" ><a></a></li>
+				</ul>
+			</div>
+			<div class="floor floor-9">
+				<span class="text">
+					<h2></h2>
+					<h3></h3>
+				</span>
+				<ul class="prev-next-links">
+					<li id="top" class="icone_dir text prev"><a></a></li>
+					<li id="bas" class="icone_dir text next" ><a></a></li>
+				</ul>
+			</div>
+			<div class="floor floor-10">
+				<span class="text">
+					<h2></h2>
+					<h3></h3>
+				</span>
 				<ul class="prev-next-links">
 					<li id="top" class="icone_dir text prev"><a></a></li>
 				</ul>				
@@ -167,12 +214,28 @@
 			</ul>
 		</nav>-->
 		<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-		<script src="js/classie.js"></script>
-        <script src="js/modalEffects.js"></script>
+        <!-- MODALS -->
+  		<script src="js/jquery.magnific-popup.js"></script>
+        <script>
+   			
+			    $(function () {
+					$('.popup-modal').magnificPopup({
+						type: 'inline',
+						preloader: false,
+						focus: '#username',
+						modal: true
+					});
+					$(document).on('click', '.popup-modal-dismiss', function (e) {
+						e.preventDefault();
+						$.magnificPopup.close();
+					});
+				});
+    		
+ 	    </script>
 		<!-- NAVIGATION-->
 		<script src="dist/jquery.ascensor.js"></script>
 		<script>
-			var ascensor = $('#ascensorBuilding').ascensor({ascensorFloorName:["Home", "Series", "Seasons" , "maincolor1" , "maincolor2", "maincolor3", "maincolor4"], direction: [[0,1],[0,0],[0,2],[1,1],[2,1],[3,1],[4,1],[5,1]]});
+			var ascensor = $('#ascensorBuilding').ascensor({ascensorFloorName:["Home", "Series", "Seasons" , "maincolor1" , "maincolor2", "maincolor3", "maincolor4", "maincolor5", "maincolor6", "maincolor7", "maincolor8", "maincolor9", "maincolor10"], direction: [[0,1],[0,0],[0,2],[1,1],[2,1],[3,1],[4,1],[5,1],[6,1],[7,1],[8,1],[9,1],[10,1],]});
 			var ascensorInstance = $('#ascensorBuilding').data('ascensor');
 				
 			$(".links-to-floor li").click(function(event, index) {
@@ -204,15 +267,9 @@
 			    $("#formeleft").hover(function () {
 			        $("#cbs, #cbs-sub, .cover").toggle();
 			    });
-			})
-
-			$(document).ready(function() {
 			    $("#formeright").hover(function () {
 			        $("#cbsea, #cbsea-sub, .cover").toggle();
 			    });
-			})
-
-			$(document).ready(function() {
 			    $("#formebottom").hover(function () {
 			        $("#cbh, #cbh-sub, .cover").toggle();
 			    });
@@ -227,31 +284,19 @@
 			for (var i in bidule.rows) {
 		            // Set the variables from the results array
 			    var code = bidule.rows[i].Code;
-			    console.log(code); 
 			    var thisseries = bidule.rows[i].Series;
-			    console.log(thisseries); 
 
 			    var color1 = bidule.rows[i].Couleur1;
-			    console.log(color1);    
 			    var color2 = bidule.rows[i].Couleur2;
-			    console.log(color2);
 			    var color3 = bidule.rows[i].Couleur3;
-			    console.log(color3);
 			    var color4 = bidule.rows[i].Couleur4;
-			    console.log(color4);
 			    var color5 = bidule.rows[i].Couleur5;
-			    console.log(color5);
 			    var color6 = bidule.rows[i].Couleur6;
-			    console.log(color6);
 			    var color7 = bidule.rows[i].Couleur7;
-			    console.log(color7);
 			    var color8 = bidule.rows[i].Couleur8;
-			    console.log(color8);
 			    var color9 = bidule.rows[i].Couleur9;
-			    console.log(color9);
 
 			    var fond = bidule.rows[i].front_bg;
-			    console.log(fond);
 
 			    //create the card
 				$('#colorsbyseries').append('<div class="flip-container"><div class="flipper"><div id="'+code+'" class="front"><h1>'+ thisseries + '</h1></div><div class="back"><div id="'+code+'_color1" class="nuancier"><span>'+color1+'</span></div><div id="'+code+'_color2" class="nuancier"><span>'+color2+'</span></div><div id="'+code+'_color3" class="nuancier"><span>'+color3+'</span></div><div id="'+code+'_color4" class="nuancier"><span>'+color4+'</span></div><div id="'+code+'_color5" class="nuancier"><span>'+color5+'</span></div><div id="'+code+'_color6" class="nuancier"><span>'+color6+'</span></div><div id="'+code+'_color7" class="nuancier"><span>'+color7+'</span></div><div id="'+code+'_color8" class="nuancier"><span>'+color8+'</span></div><div id="'+code+'_color9" class="nuancier"><span>'+color9+'</span></div></div></div></div>');
@@ -275,7 +320,6 @@
 		<!--JSON BY SEASONS-->
 		<script>
 			var sliceColor = [ ];
-			$(document).ready(function() {
 
 				var url="marvelcolors-data-json.txt";
 			    var json = new Array();
@@ -335,11 +379,141 @@
 			                    $('.winter').css('height', 100/$('.winter').length + '%');
 			                }
 			            });
+
 			        };
 			        showJSON(); 
-			});
 		</script>
+<script>
+var tablo_colors = {};
+var sorted_tablo = {};
+var couleurs = [];
+var iCouleur = 0;
 
+var tablo_colors2 = {};
+var sorted_tablo2 = {};
+var hexacouleurs = [];
+var ihexaCouleur = 0;
+
+function sortJsonName(a,b){
+	return a.name_flatten_couleur1.toLowerCase() > b.name_flatten_couleur1.toLowerCase() ? 1 : -1;
+	return a.name_flatten_couleur2.toLowerCase() > b.name_flatten_couleur2.toLowerCase() ? 1 : -1;
+	return a.name_flatten_couleur3.toLowerCase() > b.name_flatten_couleur3.toLowerCase() ? 1 : -1;
+	return a.name_flatten_couleur4.toLowerCase() > b.name_flatten_couleur4.toLowerCase() ? 1 : -1;
+	return a.name_flatten_couleur5.toLowerCase() > b.name_flatten_couleur5.toLowerCase() ? 1 : -1;
+};
+function compareNombres(a, b) {
+	return a - b;
+}
+function assocSort(oAssoc) {
+    var idx;
+    var key;
+    var arVal = [];
+    var arValKey = [];
+    var oRes = {};
+     
+    for (key in oAssoc) {
+        arVal[arVal.length] = oAssoc[key];
+        arValKey[oAssoc[key]] = key;
+    }
+    arVal.sort(compareNombres);
+    arVal.reverse();
+    for (idx in arVal)
+        oRes[arValKey[arVal[idx]]] = arVal[idx];
+     
+    return oRes;
+}
+	
+		$.getJSON("datacolors.json", function(cats){
+      		cats = $(cats).sort(sortJsonName);
+
+      		$.each(cats, function(index, cat){      				
+				if(tablo_colors[cat.name_flatten_couleur1])
+					tablo_colors[cat.name_flatten_couleur1]++;
+				else
+					tablo_colors[cat.name_flatten_couleur1]=1;
+
+				if(tablo_colors[cat.name_flatten_couleur2])
+					tablo_colors[cat.name_flatten_couleur2]++;
+				else
+					tablo_colors[cat.name_flatten_couleur2]=1;
+					
+				if(tablo_colors[cat.name_flatten_couleur3])
+					tablo_colors[cat.name_flatten_couleur3]++;
+				else
+					tablo_colors[cat.name_flatten_couleur3]=1;
+
+				if(tablo_colors[cat.name_flatten_couleur4])
+					tablo_colors[cat.name_flatten_couleur4]++;
+				else
+					tablo_colors[cat.name_flatten_couleur4]=1;	
+
+				if(tablo_colors[cat.name_flatten_couleur5])
+					tablo_colors[cat.name_flatten_couleur5]++;
+				else
+					tablo_colors[cat.name_flatten_couleur5]=1;				
+			});
+			sorted_tablo = assocSort(tablo_colors);
+	        for(var couleur in sorted_tablo) {
+	        	couleurs[iCouleur++] = couleur;
+	        };
+
+	        $.each(cats, function(index, cat){		
+				if(tablo_colors2[cat.flatten_couleur1])
+					tablo_colors2[cat.flatten_couleur1]++;
+				else
+					tablo_colors2[cat.flatten_couleur1]=1;
+
+				if(tablo_colors2[cat.flatten_couleur2])
+					tablo_colors2[cat.flatten_couleur2]++;
+				else
+					tablo_colors2[cat.flatten_couleur2]=1;
+					
+				if(tablo_colors2[cat.flatten_couleur3])
+					tablo_colors2[cat.flatten_couleur3]++;
+				else
+					tablo_colors2[cat.flatten_couleur3]=1;
+
+				if(tablo_colors2[cat.flatten_couleur4])
+					tablo_colors2[cat.flatten_couleur4]++;
+				else
+					tablo_colors2[cat.flatten_couleur4]=1;	
+
+				if(tablo_colors2[cat.flatten_couleur5])
+					tablo_colors2[cat.flatten_couleur5]++;
+				else
+					tablo_colors2[cat.flatten_couleur5]=1;
+
+				/*$('#test').append('<img class="'+cat.name_flatten_couleur1+' '+cat.name_flatten_couleur2+' '+cat.name_flatten_couleur3+ ' '+cat.name_flatten_couleur4+' '+ cat.name_flatten_couleur5+'" src="'+cat.route+'"/>');
+				$('#test .black').css('opacity','1 !important');*/
+			});
+			sorted_tablo2 = assocSort(tablo_colors2);
+	        for(var hexacouleur in sorted_tablo2) {
+	        	hexacouleurs[ihexaCouleur++] = hexacouleur;
+	        };
+			$('.floor-4').css('background-color', couleurs[0]);
+			$('.floor-4 h2').append(couleurs[0]);
+			$('.floor-4 h3').append(hexacouleurs[0]);
+			$('.floor-5').css('background-color', couleurs[1]);
+			$('.floor-5 h2').append(couleurs[1]);
+			$('.floor-5 h3').append(hexacouleurs[1]);
+			$('.floor-6').css('background-color', couleurs[2]);
+			$('.floor-6 h2').append(couleurs[2]);
+			$('.floor-6 h3').append(hexacouleurs[2])
+			$('.floor-7').css('background-color', couleurs[3]);
+			$('.floor-7 h2').append(couleurs[3]);
+			$('.floor-7 h3').append(hexacouleurs[3]);
+			$('.floor-8').css('background-color', couleurs[4]);
+			$('.floor-8 h2').append(couleurs[4]);
+			$('.floor-8 h3').append(hexacouleurs[4]);
+			$('.floor-9').css('background-color', couleurs[5]);
+			$('.floor-9 h2').append(couleurs[5]);
+			$('.floor-9 h3').append(hexacouleurs[5]);
+			$('.floor-10').css('background-color', couleurs[6]);
+			$('.floor-10 h2').append(couleurs[6]);
+			$('.floor-10 h3').append(hexacouleurs[6]);
+		});
+
+</script>
 
 	</body>
 </html>
